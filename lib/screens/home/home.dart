@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trip_advisor/screens/home/widgets/location.dart';
+import 'package:trip_advisor/screens/home/widgets/rating.dart';
 import 'package:trip_advisor/styles.dart';
 
 class Home extends StatelessWidget {
@@ -19,6 +20,11 @@ class Home extends StatelessWidget {
                 Location(
                   city: "Paris",
                   country: "França",
+                ),
+                Rating(
+                  numberOfRatings: 32,
+                  numberOfStars: 1,
+                  numberOfSolidStars: 4,
                 ),
               ],
             )
