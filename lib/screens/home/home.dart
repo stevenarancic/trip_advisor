@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:trip_advisor/screens/home/widgets/location.dart';
+import 'package:trip_advisor/styles.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -14,8 +16,9 @@ class Home extends StatelessWidget {
             ),
             Row(
               children: [
-                Text(
-                  "data",
+                Location(
+                  city: "Paris",
+                  country: "França",
                 ),
               ],
             )
