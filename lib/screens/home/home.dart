@@ -57,9 +57,53 @@ class Home extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Photo(
-                placeImage: "assets/images/banner_image.jpg",
-                placeName: "placeName",
+              Row(
+                children: [
+                  Photo(
+                    placeImage: "assets/images/foto_1.jpg",
+                    placeName: "Musée d'Orsay",
+                  ),
+                  Photo(
+                    placeImage: "assets/images/foto_2.jpg",
+                    placeName: "Catedral de Notre-Dame",
+                  ),
+                  Photo(
+                    placeImage: "assets/images/foto_3.jpg",
+                    placeName: "Sainte-Chapelle",
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Photo(
+                    placeImage: "assets/images/foto_4.jpg",
+                    placeName: "Museu do Louvre",
+                  ),
+                  Photo(
+                    placeImage: "assets/images/foto_5.jpg",
+                    placeName: "Arco do Triunfo",
+                  ),
+                  Photo(
+                    placeImage: "assets/images/foto_6.jpg",
+                    placeName: "Palais Garnier",
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Photo(
+                    placeImage: "assets/images/foto_7.jpg",
+                    placeName: "Jardim de Luxemburgo",
+                  ),
+                  Photo(
+                    placeImage: "assets/images/foto_8.jpg",
+                    placeName: "Seine River",
+                  ),
+                  Photo(
+                    placeImage: "assets/images/foto_9.jpg",
+                    placeName: "Torre Eiffel",
+                  ),
+                ],
               ),
             ],
           ),
