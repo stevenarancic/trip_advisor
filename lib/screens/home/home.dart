@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trip_advisor/screens/home/widgets/location.dart';
+import 'package:trip_advisor/screens/home/widgets/photo.dart';
 import 'package:trip_advisor/screens/home/widgets/rating.dart';
 import 'package:trip_advisor/styles.dart';
 
@@ -55,7 +56,11 @@ class Home extends StatelessWidget {
                   color: greenTheme,
                   fontWeight: FontWeight.bold,
                 ),
-              )
+              ),
+              Photo(
+                placeImage: "assets/images/banner_image.jpg",
+                placeName: "placeName",
+              ),
             ],
           ),
         ),
