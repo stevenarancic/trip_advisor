@@ -20,6 +20,7 @@ class Home extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 18.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Location(
                       city: "Paris",
