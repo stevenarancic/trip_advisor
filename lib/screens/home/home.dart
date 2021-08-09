@@ -8,46 +8,49 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Center(
-              child: Image.asset(
-                "assets/images/banner_image.jpg",
-              ),
-            ),
-            Row(
-              children: [
-                Location(
-                  city: "Paris",
-                  country: "França",
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 18),
+          child: Column(
+            children: [
+              Center(
+                child: Image.asset(
+                  "assets/images/banner_image.jpg",
                 ),
-                Rating(
-                  numberOfRatings: 32,
-                  numberOfStars: 1,
-                  numberOfSolidStars: 4,
+              ),
+              Row(
+                children: [
+                  Location(
+                    city: "Paris",
+                    country: "França",
+                  ),
+                  Rating(
+                    numberOfRatings: 32,
+                    numberOfStars: 1,
+                    numberOfSolidStars: 4,
+                  ),
+                ],
+              ),
+              Text(
+                "Conheça as maravilhas da capital Francesa",
+                style: TextStyle(
+                  fontSize: 24,
+                  color: greenTheme,
+                  fontWeight: FontWeight.bold,
                 ),
-              ],
-            ),
-            Text(
-              "Conheça as maravilhas da capital Francesa",
-              style: TextStyle(
-                fontSize: 24,
-                color: greenTheme,
-                fontWeight: FontWeight.bold,
               ),
-            ),
-            Text(
-              "É impossível não se render aos encantos de Paris, a bela capital francesa e destino turístico frequentado por milhões de pessoas todos os anos. Vibrante, charmosa, romântica, divertida, além de berço da cultura e da arte, a Cidade Luz, como é chamada, possui uma infindável lista de qualidades.",
-            ),
-            Text(
-              "Fotos",
-              style: TextStyle(
-                fontSize: 20,
-                color: greenTheme,
-                fontWeight: FontWeight.bold,
+              Text(
+                "É impossível não se render aos encantos de Paris, a bela capital francesa e destino turístico frequentado por milhões de pessoas todos os anos. Vibrante, charmosa, romântica, divertida, além de berço da cultura e da arte, a Cidade Luz, como é chamada, possui uma infindável lista de qualidades.",
               ),
-            )
-          ],
+              Text(
+                "Fotos",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: greenTheme,
+                  fontWeight: FontWeight.bold,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
