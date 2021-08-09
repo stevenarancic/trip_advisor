@@ -14,11 +14,16 @@ class Photo extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset(this.placeImage),
-        Text(
-          this.placeName,
-          style: TextStyle(
-            fontSize: 10,
+        Image.asset(
+          this.placeImage,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8.0),
+          child: Text(
+            this.placeName,
+            style: TextStyle(
+              fontSize: 8,
+            ),
           ),
         )
       ],
