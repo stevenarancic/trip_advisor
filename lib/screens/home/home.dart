@@ -58,6 +58,7 @@ class Home extends StatelessWidget {
                 ),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Photo(
                     placeImage: "assets/images/foto_1.jpg",
@@ -74,6 +75,7 @@ class Home extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Photo(
                     placeImage: "assets/images/foto_4.jpg",
@@ -90,6 +92,7 @@ class Home extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Photo(
                     placeImage: "assets/images/foto_7.jpg",

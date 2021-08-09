@@ -12,10 +12,14 @@ class Photo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image.asset(this.placeImage),
         Text(
           this.placeName,
+          style: TextStyle(
+            fontSize: 10,
+          ),
         )
       ],
     );
