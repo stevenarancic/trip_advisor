@@ -19,10 +19,14 @@ class Location extends StatelessWidget {
           FontAwesomeIcons.mapMarkerAlt,
           color: grayTheme,
         ),
+        SizedBox(
+          width: 8,
+        ),
         Text(
           this.city,
           style: TextStyle(
             color: grayTheme,
+            fontWeight: FontWeight.bold,
           ),
         ),
         Text(
@@ -35,6 +39,7 @@ class Location extends StatelessWidget {
           this.country,
           style: TextStyle(
             color: grayTheme,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ],

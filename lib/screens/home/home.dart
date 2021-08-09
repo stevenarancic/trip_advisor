@@ -17,18 +17,21 @@ class Home extends StatelessWidget {
                   "assets/images/banner_image.jpg",
                 ),
               ),
-              Row(
-                children: [
-                  Location(
-                    city: "Paris",
-                    country: "França",
-                  ),
-                  Rating(
-                    numberOfRatings: 32,
-                    numberOfStars: 1,
-                    numberOfSolidStars: 4,
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 18.0),
+                child: Row(
+                  children: [
+                    Location(
+                      city: "Paris",
+                      country: "França",
+                    ),
+                    Rating(
+                      numberOfRatings: 32,
+                      numberOfStars: 1,
+                      numberOfSolidStars: 4,
+                    ),
+                  ],
+                ),
               ),
               Text(
                 "Conheça as maravilhas da capital Francesa",

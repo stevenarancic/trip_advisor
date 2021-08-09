@@ -20,13 +20,18 @@ class Rating extends StatelessWidget {
         for (var i = 0; i < this.numberOfSolidStars; i++)
           FaIcon(
             FontAwesomeIcons.solidStar,
+            size: 20,
             color: orangeTheme,
           ),
         for (var i = 0; i < this.numberOfStars; i++)
           FaIcon(
             FontAwesomeIcons.star,
+            size: 20,
             color: grayTheme,
           ),
+        SizedBox(
+          width: 8,
+        ),
         Text(
           "${this.numberOfRatings} avaliações",
         ),
